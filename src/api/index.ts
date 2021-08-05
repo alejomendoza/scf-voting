@@ -1,7 +1,6 @@
 import { Router } from 'tiny-request-router';
-
 import votes from './votes';
-import vote from './votes';
+import vote from './vote';
 import approve from './approve';
 
 export const router = new Router();
