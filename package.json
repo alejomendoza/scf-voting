@@ -1,0 +1,27 @@
+{
+  "private": true,
+  "name": "scf-voting",
+  "version": "1.0.0",
+  "description": "A template for kick starting a Cloudflare Workers project",
+  "main": "dist/worker.js",
+  "scripts": {
+    "build": "webpack",
+    "dev": "npm run build && wrangler dev --host=localhost",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "format": "prettier --write '**/*.{js,css,json,md}'"
+  },
+  "author": "Alejo Mendoza <alejandro@skyhitzmusic.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@cloudflare/workers-types": "^2.2.2",
+    "prettier": "^2.3.0",
+    "ts-loader": "^9.2.2",
+    "typescript": "^4.3.2",
+    "webpack": "^5.38.1",
+    "webpack-cli": "^4.7.0"
+  },
+  "dependencies": {
+    "cfw-easy-utils": "^1.0.2",
+    "tiny-request-router": "^1.2.2"
+  }
+}
