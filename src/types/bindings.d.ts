@@ -1,5 +1,6 @@
 export {};
 
 declare global {
-  const VOTES: KVNamespace;
+  const PROJECTS: DurableObject;
+  const WEBFLOW_API_KEY: string;
 }

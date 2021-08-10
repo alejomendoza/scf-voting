@@ -5,6 +5,7 @@ account_id = "8d06a01e958a084add5fcf155430e0fa"
 workers_dev = true
 route = ""
 zone_id = ""
-kv_namespaces = [ 
-  { binding = "VOTES", id = "0124e459ab2244f892597d8e17410a7b", preview_id = "d53fc29368164cd5b4c6eee7f8dc200e"}
+[durable_objects]
+bindings = [
+  { name = "PROJECTS", class_name = "DurableProjects" } 
 ]
